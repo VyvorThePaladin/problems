@@ -1,9 +1,15 @@
+# Given a non-empty array of integers, 
+# every element appears twice except for one. 
+# Find that single one.
+
 from collections import Counter
 
 n = 9
 arr = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 pairCount = 0
 
+# Counter -> container that keeps track of how many
+#                    times equivalent values are added
 for values in Counter(arr).values():
     pairCount += values//2
 print(pairCount)
